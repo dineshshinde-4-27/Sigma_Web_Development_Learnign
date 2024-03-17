@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: orange;
+        }
+
+        @media only screen and (max-width:455px) {
+            .box {
+                background-color: red;
+                color: white;
+            }
+
+            body {
+                background-color: blue;
+            }
+
+        }
+
+        @media only screen and (max-width:355px) {
+            .box {
+                background-color: black;
+                color: white;
+            }
+
+            body {
+                background-color: yellow;
+            }
+
+        }
+
+
+        @media only screen and (max-width:255px) {
+            .box {
+                background-color: white;
+                color: brown;
+            }
+
+            body {
+                background-color: green;
+            }
+
+        }
+
+        @media only screen and (max-width:55px) {
+            .box {
+                background-color: red;
+                color: white;
+            }
+
+            body {
+                background-color: red;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+        Lorem ipsum dolor sit.
+    </div>
+</body>
+
+</html>

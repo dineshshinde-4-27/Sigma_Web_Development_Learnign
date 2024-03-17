@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: brown;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(211, 217, 33);
+        }
+
+        .main {
+            background-color: orange;
+            padding: 34px;
+            border: 2px solid white;
+            border-radius: 23px;
+
+        }
+
+        input {}
+
+        .mainForm {
+            margin: 1%;
+            background-color: yellow;
+            color: black;
+        }
+
+        label {
+            /* display: block; */
+            /* padding-right: 64px; */
+            margin: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Application Form of NEET</h1>
+    <div class="main">
+        <form action="back.php"></form>
+        <div class="formdiv">
+            <label for="myName">Name :</label>
+            <input type="text" id="myName" placeholder="Enter your name..." class="mainForm">
+        </div>
+        <div class="formdiv">
+            <label for="myAddress">Address:</label>
+            <input type="text" id="myAddress" placeholder="Enter your name..." class="mainForm">
+        </div>
+        <div class="formdiv">
+            <label for="myDate">Date of Birth: </label>
+            <input type="date" id="myDate" placeholder="Enter your name..." class="mainForm">
+        </div>
+        <div class="formdiv">
+            <ul>Mention you Skills</ul>
+            <li><label for="myopt">HTML:</label>
+                <input type="checkbox" id="myopt" placeholder="Enter your name..." class="mainForm">
+            </li>
+            <li><label for="myopt1">CSS:</label>
+                <input type="checkbox" id="myopt1" placeholder="Enter your name..." class="mainForm">
+            </li>
+            <li><label for="myopt2">JavaScript:</label>
+                <input type="checkbox" id="myopt2" placeholder="Enter your name..." class="mainForm">
+            </li>
+        </div>
+
+
+        <div class="formdiv">
+            <label for="male">Male</label>
+            <input type="radio" id="male" class="mainForm" name="gender">
+            <label for="fmale">Female:</label>
+            <input type="radio" id="fmale" class="mainForm" name="gender">
+            <label for="Other">Others:</label>
+            <input type="radio" id="Other" class="mainForm" name="gender">
+        </div>
+
+
+        <div class="formdiv">
+            <label for="myarea">Discription:</label>
+            <textarea name="mytext" id="myarea" cols="45" rows="9"
+                placeholder="Ente you personal openion on Java or C or C++" style="text-align: center;"></textarea>
+        </div>
+        <div class="formdiv">
+            <label for="mys">Choose the car</label>
+            <select name="myselect" id="mys">
+                <option value="Car">Swift</option>
+                <option value="Car">Mursadi</option>
+                <option value="Car" selected>Fortuner</option>
+                <option value="Car">Omani</option>
+                <option value="Car">Amaze</option>
+            </select>
+        </div>
+    </div>
+
+</body>
+
+</html>

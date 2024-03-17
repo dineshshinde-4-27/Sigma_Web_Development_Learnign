@@ -1,0 +1,1 @@
+alert("Information about SEO and Core be vaitals")

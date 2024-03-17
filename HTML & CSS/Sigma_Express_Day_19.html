@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity And Cascade In CSS</title>
+    <style>
+        * {
+            color: white;
+
+        }
+
+        body {
+            background-color: rgb(59, 48, 48);
+        }
+
+        .list {
+            padding: 0px 54px;
+            border: 2px solid rgb(145, 126, 99);
+        }
+
+        h2 {
+            color: rgb(185, 203, 46);
+            background-color: rgb(36, 27, 21);
+        }
+
+        th {
+            color: rgb(207, 207, 7);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Specificity and Cascade Algorithm</h2>
+    <p> Cascade is the algorithim for soloving conficts where multipule css rules apply to an HTML element </p>
+    <span> Cascade algorithm has Four important rule</span>
+    <ol>
+        <li>Psition and order of apperence : The order in whihc your css rulse appere.</li>
+        <li> Specificity : an algorithm that determines which css selector has strongest match </li>
+        <li>Origin : The order in whihc css appers and where it comes form, wheter that is a browser syle . CSS from a
+            browser extension, or yo authored CSS.</li>
+        <li>Importance : Some CSS rules are weighted more heavily than especialty with important rule type lets look
+            into all these one by one </li>
+
+
+
+
+
+    </ol>
+    <p>Specificity Calculation :</p>
+    <table>
+        <tr>
+            <th class="list">Sr.No </th>
+            <th class="list">Name</th>
+            <th class="list"> Score </th>
+        </tr>
+        <tbody>
+            <tr>
+                <td class="list">1</td>
+                <td class="list">Inline Style </td>
+                <td class="list">1000</td>
+            </tr>
+            <tr>
+                <td class="list">2</td>
+                <td class="list">ID Selector </td>
+                <td class="list">100</td>
+            </tr>
+            <tr>
+                <td class="list">3</td>
+                <td class="list">Class, Attribute and pseudo Selector</td>
+                <td class="list">10</td>
+            </tr>
+            <tr>
+                <td class="list">4</td>
+                <td class="list">Element Selector and pessude element </td>
+                <td class="list">1</td>
+            </tr>
+            <tr>
+                <td class="list">1</td>
+                <td class="list">Universal Selector</td>
+                <td class="list">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

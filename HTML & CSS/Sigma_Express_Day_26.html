@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            padding: 23px;
+            border: 2px solid red;
+            margin: 23px;
+        }
+
+        .box {
+            height: 513px;
+            width: 80vw;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: pink;
+            position: sticky;
+            top: 3px;
+            /* it set as stkick it stiks on page wehile you scroo about that element it mostly use when you creating nav bar */
+
+        }
+
+        .box2 {
+            background-color: red;
+            position: relative;
+            /* top:10px; */
+            /* reletive: changes our positoin reletive to it soriginal position  */
+        }
+
+        .box3 {
+            background-color: orange;
+            position: absolute;
+            top: 12px;
+            z-index: 0-1;
+            /* Absolute :   it sets reletive to it position element if there is no positioned element the it set reletive to html page or body */
+        }
+
+        .box4 {
+            background-color: green;
+            height: 45px;
+            position: fixed;
+            top: 34px;
+            /*  it  fixed on web page and it  always set reletive to the parent and while you scrool it will not change it's position */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+
+</body>
+
+</html>

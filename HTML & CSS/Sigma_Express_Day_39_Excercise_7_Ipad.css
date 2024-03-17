@@ -1,0 +1,7 @@
+.lang {
+    display: grid;
+    gap: 13px;
+    justify-content: center;
+    grid-template-columns: auto auto;
+
+}

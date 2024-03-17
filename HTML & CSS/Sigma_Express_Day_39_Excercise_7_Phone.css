@@ -1,0 +1,40 @@
+.right ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 0.7rem;
+    gap: 9px;
+}
+
+nav {
+    display: block;
+    margin: auto;
+}
+
+.log {
+    margin: 23px 5px;
+}
+
+
+.log img {
+    display: block;
+    width: 148px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.lang {
+    display: grid;
+    gap: 18px;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+}
+
+.box {
+    /* width: 850px;
+    height: 185px; */
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 15px;
+}

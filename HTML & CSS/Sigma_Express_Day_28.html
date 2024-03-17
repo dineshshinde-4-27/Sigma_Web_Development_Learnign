@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        :root {
+            --bg-color: rgb(74, 74, 140);
+            --bg1color: rgb(28, 24, 71);
+            --bg3-color: rgb(244, 230, 205);
+            --par-color: rgb(201, 220, 96);
+
+
+        }
+
+        body {
+            background-color: var(--bg3-color);
+            padding: 10px 0px;
+        }
+
+        .nav {
+            padding: 35px 0px;
+            background-color: var(--bg-color);
+        }
+
+        .nav ul {
+            display:
+                flex;
+            list-style-type: none;
+            background-color: var(--bg1color);
+            padding: 0px 45px;
+
+        }
+
+        .nav ul li {
+            margin: 2px 45px;
+            color: white;
+            padding: 2px 8px;
+        }
+
+        .nav ul li:hover {
+
+            color: var(--bg1-color);
+            background-color: var(--bg-color);
+            border-radius: 23px;
+        }
+
+        .par {
+            margin: 23px auto;
+            border: 2px solid gray;
+            padding: 5px 15px;
+            border-radius: 12px;
+            width: 695px;
+            height: 330px;
+            background-color: var(--par-color);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home </li>
+            <li>About </li>
+            <li>Login</li>
+
+        </ul>
+
+    </div>
+    <div class="par">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nisi dignissimos minus aperiam. Sequi
+            blanditiis laboriosam impedit vel, animi dolorem ipsam quia quas quasi tempora nihil facere? Voluptates,
+            accusantium? Accusamus laborum optio, ipsa saepe nostrum asperiores accusantium molestiae veritatis, quis
+            aperiam sunt quas minima? Sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui minus at
+            voluptate, nisi ut delectus officia minima eos provident nobis unde dignissimos perspiciatis quos
+            exercitationem autem, officiis neque incidunt non et consequuntur dolorum atque eius? Quisquam impedit
+            quidem beatae quae eum sed sunt veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Veritatis sapiente eum earum labore fugiat reiciendis beatae, distinctio omnis sit cum rerum natus
+            exercitationem animi odit necessitatibus pariatur nisi? Vero quasi ipsam, dolore porro, tempore facere nulla
+            molestias consequatur repudiandae obcaecati omnis. Iusto, voluptatem. Neque facilis dicta vitae nostrum
+            similique soluta facere, minima molestias quia commodi sint aut tempora saepe magnam consequuntur mollitia
+            quod et! Magnam quis dolor reprehenderit optio explicabo at facere, maiores doloremque distinctio harum,
+            necessitatibus dolorem velit vitae perspiciatis quae! Tempora molestiae sed iure architecto nihil, quo atque
+            modi at asperiores quaerat delectus veritatis eaque ratione? Illo eveniet alias tempore. Nihil explicabo
+            laborum ea veritatis optio labore earum recusandae dolores vero sapiente. Ullam modi dicta omnis magnam, non
+            voluptatem neque placeat dolorum qui, voluptas dolore explicabo nostrum aperiam maxime temporibus! Eos,
+            vitae odio enim in eius eaque neque sed cum fugiat impedit sapiente soluta omnis sit illum, quibusdam dicta
+            error. Tempora.</p>
+    </div>
+
+</body>
+
+</html>

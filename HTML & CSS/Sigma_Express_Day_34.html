@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            background-color: rgb(147, 143, 143);
+            border: 2px solid black;
+            height: 75vh;
+            display: flex;
+            /*  flex direction  by-default set as row */
+
+            flex-direction: row;
+            /* Default behaviour of flex direction */
+            /* flex-direction: row-reverse; */
+            /* it lay our items in revers manner in row */
+            /* flex-direction: column; */
+            /* it lay the items in column */
+            /* flex-direction: column-reverse; */
+            /* it lay the items in reverse order on */
+
+            justify-content: space-between;
+            /* Space-Between : it adds sapce for all between element it does not add space for first ant last element  */
+            justify-content: space-evenly;
+            /* space-evenly : it adds similar sapce for all items inthe container */
+
+            /* justify-content: center; */
+            /* space-around : same sapce at frist and last  elment and same space for for remaining elemnt of the container*/
+
+            align-items: center;
+            align-content: center;
+            /* it makes all element of the container as vertically center */
+            /* align-items: end; */
+            /* it brins the item towards bottom side */
+            /* align-items: start; */
+            /* it brins the item towards top side */
+            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            flex-flow: column;
+            flex-wrap: wrap;
+
+
+        }
+
+        .box {
+            height: 55px;
+            width: 55px;
+            background-color: orange;
+            border: 2px solid white;
+            margin: 2px;
+            text-align: center;
+            font-size: 54px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        >
+    </div>
+
+</body>
+
+</html>

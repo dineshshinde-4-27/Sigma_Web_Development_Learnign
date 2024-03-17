@@ -1,0 +1,281 @@
+<!-- Create the Navigation bar of ultra Editor by only using Flex box .I it is possible then you can create that page also.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise-7</title>
+    <!-- <link rel="stylesheet" href="Sigma_Express_Day_39_Excercise_7.css">
+    <link rel="stylesheet" media="screen and (max-width:820px)" href="Sigma_Express_Day_39_Excercise_7_Ipad.css">
+    <link rel="stylesheet" media="screen and (max-width:590px)" href="Sigma_Express_Day_39_Excercise_7_Phone.css"> -->
+    <style>
+        /* Css Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Header section */
+        header {
+            padding: 12px 0px;
+            margin: auto;
+        }
+
+        /*Nav bar */
+        .log img {
+            width: 164px;
+            cursor: pointer;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .right ul {
+            display: flex;
+            gap: 35px;
+
+        }
+
+        .right ul li {
+            list-style-type: none;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        svg {
+            padding: 0px 1px;
+
+        }
+
+        /* downlod boxes */
+        .lang {
+            display: grid;
+            gap: 13px;
+            justify-content: center;
+            grid-template-columns: auto auto auto;
+        }
+
+        .box {
+            width: 290px;
+            height: 126px;
+            background-color: #f6f6f6;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .box h2 {
+            padding-bottom: 47px;
+        }
+
+        /* box button */
+        .btnblue a {
+            /* line-height: 7; */
+            background-color: #00b6d1;
+            text-decoration: none;
+
+            padding: 8px;
+            border-radius: 5px;
+            color: white;
+            margin-right: 9px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .btnblue a:hover {
+            /* line-height: 7; */
+            background-color: #077586;
+
+        }
+
+        .btngreen a:hover {
+            /* line-height: 7; */
+            background-color: #357235;
+        }
+
+        .btngreen a {
+            /* line-height: 7; */
+            background-color: #5cb85c;
+            text-decoration: none;
+
+            padding: 8px;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        /* Ipad CSS */
+
+        @media screen and (max-width:820px) {
+            .lang {
+                display: grid;
+                gap: 13px;
+                justify-content: center;
+                grid-template-columns: auto auto;
+
+            }
+        }
+
+        /* Phone CSS */
+        @media screen and (max-width:590px) {
+            .right ul {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                font-size: 0.7rem;
+                gap: 9px;
+            }
+
+            nav {
+                display: block;
+                margin: auto;
+            }
+
+            .log {
+                margin: 23px 5px;
+            }
+
+
+            .log img {
+                display: block;
+                width: 148px;
+                cursor: pointer;
+                margin: auto;
+            }
+
+            .lang {
+                display: grid;
+                gap: 18px;
+                justify-content: center;
+                grid-template-columns: auto;
+                grid-auto-flow: row;
+            }
+
+            .box {
+                /* width: 850px;
+                height: 185px; */
+                background-color: #f6f6f6;
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="log"> <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png"
+                    alt="Ultra_Edit_Logo"></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Prodcut <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                    <li><a href="#">Pricing <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                    <li><a href="#">Resources <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                    <li><a href="#">About Us <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                    <li> <a href="#"><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                                alt="laguage Log"></a></li>
+                </ul>
+                </di </nav>
+    </header>
+
+    <div class="lang">
+        <div class="box">
+            <h2>English</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"><a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+        <div class="box">
+            <h2>Hindi</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"> <a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+        <div class="box">
+            <h2>Indonesian</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"> <a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+        <div class="box">
+            <h2>Chinese</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"> <a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+        <div class="box">
+            <h2>Russian</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"> <a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+        <div class="box">
+            <h2>French</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"><a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+        <div class="box">
+            <h2>Spanish</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"> <a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+        <div class="box">
+            <h2>Arabic</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"> <a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+        <div class="box">
+            <h2>Portuguese</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"> <a href="Exefiles/ue_english_64.exe">Download 64-bit</a> </span>
+        </div>
+        <div class="box">
+            <h2>Japanese</h2>
+            <span class="btnblue hoverbt"> <a href="Exefiles/ue_english.exe">Download 32-bit</a></span> <span
+                class="btngreen hoverbtgr"> <a href="Exefiles/ue_english_64.exe">Download 64-bit</a></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

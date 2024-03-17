@@ -1,0 +1,1 @@
+alert("Information about Heading, Paragraph and Links")

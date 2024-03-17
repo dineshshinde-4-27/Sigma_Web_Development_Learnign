@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors:</title>
+    <style>
+        body {
+            background-color: green;
+        }
+
+        /* universal Selectors  : it will apply for all*/
+        /* * {
+            padding: 0;
+            margin: 0;
+        } */
+        /* Attribute selectors : if attribute will get match then css will apply*/
+
+        /* .box[data-color="p1"]{
+            color: red;
+        } */
+
+        /* grouping selectors : css will be applyed for used selector in grouping selectors */
+
+        /* .box,
+        .box[data-color="p1"] {
+            color: blue;
+        } */
+
+        /* .box[data-color="p1"] {
+            color: red;
+            here i overide attribute selector here color will be red
+            
+        } */
+
+        /* child selector : if the selecotr is child acording to given condion than css will apply */
+        /* .box:nth-child(3){
+            color: red;
+            it is applyed on 3 box
+        } */
+        /* .box:nth-last-child(2)
+        {
+            color:peru;
+            it is applyed on 2 box from the last.
+        } */
+
+
+        /* pseudo element*/
+
+        /* .box:nth-child(2)::after {
+            content: " This is the conten whic i have been return after second box using after pseudo element";
+            color: red;
+            font-size: 34px;
+        }
+
+        .box:nth-child(1)::before {
+            content: " This is the conten whic i have been return before first box using before pseudo element";
+            color: red;
+            font-size: 34px;
+        } */
+
+        /* pesudo-class */
+        /* ::selection{
+            color: red;
+            background-color: black;
+        }
+        .box:nth-child(2)::selection{
+            color: white;
+            background-color: blue;
+            it will specialy apply  for second box.
+        } */
+
+        label {
+            background-color: white;
+            color: red;
+
+        }
+
+        /* ::placeholder {
+            background-color: black;
+            this will work for all 
+        } */
+        /* #name3::placeholder{
+            color: red;
+            background-color: yellow;
+        }#name::placeholder{
+            color: blue;
+            background-color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">This is my content</div>
+        <div data-color="p1" class="box">This is my content</div>
+        <div class="box">This is my content</div>
+        <div class="box">This is my content</div>
+    </div>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="What is your name ">
+    </div>
+    <div>
+        <label for="name3">Name</label>
+        <input type="text" id="name3" placeholder="What is your name ">
+    </div>
+</body>
+
+</html>

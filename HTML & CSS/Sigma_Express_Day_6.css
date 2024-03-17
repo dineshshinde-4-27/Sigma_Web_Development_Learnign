@@ -1,0 +1,31 @@
+body {
+    padding: 20px;
+    color: yellow;
+    background-color: rgb(26, 23, 23);
+
+}
+
+h3 {
+    color: white;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: 3px solid yellow;
+    padding: 8px 30px;
+
+    border-radius: 13px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    color: red;
+    background-color: black;
+}
+
+button:active {
+    color: white;
+    background-color: green;
+}

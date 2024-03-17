@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Property Overflow</title>
+    <style>
+        /* body {
+            color: white;
+            background-color: rgb(26, 19, 19);
+        } */
+
+        .container {
+            border: 2px solid yellow;
+            background-color: rgb(60, 37, 37);
+            color: yellow;
+            width: 30vw;
+            height: 30vh;
+            /* overflow: auto; */
+            /* Theis property is used when you want you got scroll bar while your conten is overflowing */
+            /* overflow: auto scroll; */
+            /*It is shor hand to seet overflow-x and overflow-y we can set both at one some time we want to get scroll bar when it needed and some time want it shows every time scroll bar even if it is not over flowing */
+            /* margin: auto; */
+            /* white-space: nowrap; */
+            /*  it show our conten in only horizental line it never fall in new line  until we are not using any line breaking tag */
+            /* overflow: auto; */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>CSS Overflow Property </h1>
+    <div class="container">
+        <p>This main content that is Lorem ipsum dolor sit amet consectetur, adipisicing elit.Accusantium architecto
+            quaerat sit veritatis? Aliquam eos magnam, ipsam ratione odit obcaecati. Nam aperiam maxime iste eligendi
+            eaque, adipisci velit voluptatum optio?
+            Mollitia dicta pariatur possimus earum voluptatibus quisquam est eos unde autem nam ullam modi cupiditate
+            deserunt eveniet quaerat repellat, sunt a sapiente dolorem quam alias ipsa quo amet? Laboriosam, sapiente.
+            Eveniet corporis dolorem sunt unde? Amet, provident nisi consequuntur reprehenderit eveniet consequatur quas
+            placeat eum sed atque repellendus, adipisci sit at nulla est necessitatibus delectus tempore harum iusto
+            porro facilis.
+            Reiciendis, ea quae. Blanditiis voluptas esse quo iste, obcaecati eius iusto perferendis alias cupiditate
+            officia tenetur sit, itaque animi consequatur necessitatibus! Autem nesciunt, hic possimus id porro nobis.
+            Possimus, delectus.
+            Ratione, nostrum mollitia doloremque error, iure adipisci blanditiis facilis voluptatibus impedit officiis
+            consequatur at. Praesentium earum architecto odit dolor quasi odio temporibus quidem libero! Nobis
+            consectetur perspiciatis facere mollitia quos!
+            Ipsum tenetur nemo dignissimos commodi. Dolore at, reprehenderit incidunt repudiandae omnis ab eos similique
+            eum delectus ex autem eius explicabo facilis iure ipsum neque iste quaerat ipsa id. Modi, soluta!</p>
+    </div>
+
+</body>
+
+</html>

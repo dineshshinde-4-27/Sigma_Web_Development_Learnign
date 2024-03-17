@@ -1,0 +1,109 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header section */
+header {
+    padding: 12px 0px;
+    margin: auto;
+}
+
+/*Nav bar */
+.log img {
+    width: 164px;
+    cursor: pointer;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.right ul {
+    display: flex;
+    gap: 35px;
+
+}
+
+.right ul li {
+    list-style-type: none;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+svg {
+    padding: 0px 1px;
+
+}
+
+/* downlod boxes */
+.lang {
+    display: grid;
+    gap: 13px;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+
+.box {
+    width: 290px;
+    height: 126px;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.box h2 {
+    padding-bottom: 47px;
+}
+
+/* box button */
+.btnblue a {
+    /* line-height: 7; */
+    background-color: #00b6d1;
+    text-decoration: none;
+
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 9px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.btnblue a:hover {
+    /* line-height: 7; */
+    background-color: #077586;
+
+}
+
+.btngreen a:hover {
+    /* line-height: 7; */
+    background-color: #357235;
+}
+
+.btngreen a {
+    /* line-height: 7; */
+    background-color: #5cb85c;
+    text-decoration: none;
+
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+}

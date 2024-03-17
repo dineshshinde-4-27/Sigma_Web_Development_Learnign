@@ -1,0 +1,1 @@
+alert("Information provided in the form comment about basic structure of html")

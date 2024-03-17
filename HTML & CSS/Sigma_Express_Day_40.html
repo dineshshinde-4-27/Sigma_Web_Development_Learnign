@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        /* Useing transition property we can make go on state to another state very soomthly. */
+        .cont {
+            width: 333vw;
+            height: 333vh;
+            background-color: gray;
+        }
+
+        .box {
+            width: 5vw;
+            height: 200vh;
+            border: 2px solid white;
+            transition-property: all;
+            transition-duration: 0.8s;
+            transition-timing-function: ease;
+            /* transition-delay:  */
+        }
+
+        .trans:hover {
+            /* transform: translateX(180px) ; */
+            background-color: yellow;
+            width: 50vh;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box trans">This is box </div>
+    </div>
+</body>
+
+</html>

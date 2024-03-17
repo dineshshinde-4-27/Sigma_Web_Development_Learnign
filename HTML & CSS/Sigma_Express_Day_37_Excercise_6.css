@@ -1,0 +1,396 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header section */
+header {
+    padding: 12px 0px;
+}
+
+/*Nav bar */
+.log img {
+    width: 164px;
+    cursor: pointer;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.right ul {
+    display: flex;
+    gap: 35px;
+
+}
+
+.right ul li {
+    list-style-type: none;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+svg {
+    padding: 0px 1px;
+
+}
+
+
+/* Section 1st */
+.sec1 {
+    width: 920px;
+    margin: auto;
+}
+
+.content {
+    text-align: center;
+    line-height: 1.4;
+}
+
+.d1 {
+    font-size: 48px;
+    padding: 40px 0px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rev {
+    margin: auto;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.d2 {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Button Design */
+.btn {
+    margin: 32px auto;
+    background-color: #00b6d1;
+    padding: 19px 2px;
+    border-radius: 6px;
+    color: white;
+    width: 332px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* UE Download UltraEdit */
+
+.dcontent {
+    display: flex;
+    gap: 2px;
+    padding: 23px;
+}
+
+.dcontent h3 {
+    padding: 12px;
+}
+
+.dcontent .boxlogo {
+    background-color: #fce005;
+    ;
+    width: 23px;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.ver {
+    font-size: 10px;
+    font-weight: normal;
+
+}
+
+/* downlod boxes */
+.lang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: center;
+
+
+}
+
+.box {
+    width: 290px;
+    height: 126px;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.box h2 {
+    padding-bottom: 47px;
+}
+
+/* box button */
+.btnblue {
+    /* line-height: 7; */
+    background-color: #00b6d1;
+    ;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 9px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.btngreen {
+    /* line-height: 7; */
+    background-color: #5cb85c;
+
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+/* Section 2 */
+#sec2 {
+    background-color: #222222;
+    color: white;
+    padding: 80px 0px;
+}
+
+.sec2 {
+    width: 920px;
+    margin: auto;
+}
+
+/* Login box */
+.mylogbox {
+    display: flex;
+    gap: 259px;
+    align-items: center;
+    margin: 23px 12px;
+}
+
+.beforelog {
+    text-align: center;
+    /* width: 340px; */
+
+}
+
+.loginbox {
+    background-color: white;
+    border-radius: 35px;
+    height: 184px;
+    width: 608px;
+    color: black;
+    padding: 33px 12px;
+
+    text-align: center;
+}
+
+.loginbox h3 {
+    font-weight: normal;
+    color: #00b6d1;
+    padding-bottom: 23px;
+}
+
+.loginbox label {
+    font-size: 12px;
+}
+
+.bt {
+    display: block;
+
+}
+
+input {
+    margin: 8px auto;
+    height: 40px;
+    width: 196px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: rgb(51 51 51 / 16%);
+    cursor: text;
+
+}
+
+.btnsignup {
+    height: 40px;
+    width: 199px;
+    background-color: #00b6d1;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+
+.log .head {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.log a {
+    text-decoration: none;
+    color: #20c9e3;
+}
+
+.log p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+}
+
+/* Footer Section */
+#mainfooter {
+    padding-top: 70px;
+}
+
+.footer {
+    width: 920px;
+    margin: auto;
+    color: black;
+    padding: 22px 0px;
+}
+
+#box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.footerbox {
+    width: 230px;
+    text-align: left;
+    /* background-color: #f6f6f6; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: w;
+}
+
+.footerbox h4 {
+    padding-bottom: 20px;
+}
+
+.footerbox a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footerbox .subbtn {
+    display: block;
+    margin: 4px auto;
+    width: 195px;
+    height: 42px;
+    background-color: #00b6d1;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+
+
+}
+
+#para {
+    text-align: left;
+    padding-bottom: 6px;
+}
+
+/* last icon */
+.img {
+    margin: 45px;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lastimg img {
+    width: 164px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 9px;
+}
+
+.icons li {
+    list-style: none;
+}
+
+.icons li svg {
+    width: 30px;
+    color: black !important;
+    cursor: pointer;
+}
+
+.lastcopyright {
+    font-size: 12px;
+    margin-bottom: 60px;
+}
+
+/* cookies setting */
+#fix {
+    background-color: #343131;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 11px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 13px;
+    color: white;
+    border-top-right-radius: 23px;
+    border-top-left-radius: 23px;
+    position: fixed;
+    bottom: -12.9px;
+    left: 11px;
+    transition: 0.3s;
+}
+
+#fix:hover {
+    background-color: black;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+
+}
+
+/* button Hover */
+
+.hoverbt:hover {
+    background-color: #077d8f;
+}
+
+.hoverbtgr:hover {
+    background-color: #428342;
+
+}

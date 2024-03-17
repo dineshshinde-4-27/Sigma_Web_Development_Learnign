@@ -1,0 +1,77 @@
+:root {
+    --ulbg: rgb(94, 24, 103);
+    --navbg: rgb(66, 21, 92);
+
+}
+
+/* css reset */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Navbar Design */
+.navbar ul {
+    margin: 0px;
+    padding: 20px;
+    background-color: var(--ulbg);
+}
+
+.navbar ul:hover {
+    --ulbg: white;
+
+    background-color: var(--ulbg);
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 20px 35px;
+    color: var(--navcl);
+    margin: 0px;
+}
+
+.navbar ul li:first-child {
+    --libg: rgb(255, 0, 0);
+    background-color: var(--libg, red);
+
+}
+
+.navbar ul li:nth-child(2) {
+    --libg: rgb(9, 255, 0);
+    background-color: var(--libg, green);
+
+}
+
+.navbar ul li:nth-child(3) {
+    --libg: rgb(0, 149, 255);
+    background-color: var(--libg, skyblue);
+
+}
+
+.navbar ul li:nth-child(4) {
+    --libg: rgb(255, 123, 0);
+    background-color: var(--libg, orange);
+
+}
+
+.navbar ul li:hover {
+    background-color: rgb(3, 61, 13);
+    color: rgb(255, 255, 255);
+}
+
+/* Paraghraph Design */
+.par {
+    padding: 34px 23px;
+    background-color: rgb(19, 19, 6);
+    color: white;
+}
+
+.par h3 {
+    color: yellow;
+}
+
+.par p {
+    line-height: 1.9rem;
+    text-align: justify;
+}
