@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bubbling event</title>
+    <style>
+      div {
+        padding: 1rem;
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+      }
+      .container {
+        border: 2px solid red;
+        margin: 4rem;
+        width: 1200px;
+        background-color: darkblue;
+      }
+      .childContainer {
+        border: 2px solid green;
+        background-color: darkgreen;
+      }
+      .child {
+        border: 2px solid rgb(152, 0, 0);
+        background-color: rgb(52, 11, 11);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      Container
+      <div class="childContainer">
+        Container Child
+        <div class="child">Child</div>
+      </div>
+    </div>
+    <script>
+      let container = document
+        .querySelector(".container")
+        .addEventListener("click", (e) => {
+          e.stopPropagation();
+          alert("container was clicked");
+        });
+      let containerChild = document
+        .querySelector(".childContainer") // Mistake: Typo in class name, it should be ".childContainer"
+        .addEventListener("click", (e) => {
+          alert("childContainer was clicked");
+          e.stopPropagation();
+        });
+      let child = document
+        .querySelector(".child")
+        .addEventListener("click", (e) => {
+          e.stopPropagation();
+          alert("child was clicked");
+        });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
