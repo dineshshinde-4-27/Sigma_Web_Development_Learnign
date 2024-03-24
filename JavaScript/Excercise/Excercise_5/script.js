@@ -93,5 +93,5 @@ btnOfNewCard.addEventListener("click", () => {
     let howOld = prompt("Enter how old video is ");
 
     generateNewCard(img, duration, title, channel, viewers, howOld);
-  }, 200); // Randomly choose between 1 or 2 seconds delay
+  }, 2000); // Randomly choose between 1 or 2 seconds delay
 });
