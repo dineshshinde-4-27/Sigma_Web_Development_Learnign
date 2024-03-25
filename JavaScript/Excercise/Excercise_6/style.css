@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.terminal {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.terminal-msg {
+  color: red;
+  font-size: 2.5rem;
+}
